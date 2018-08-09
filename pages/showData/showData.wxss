@@ -1,0 +1,20 @@
+/* 表格代码   */
+.table{
+  border-bottom: 0;
+  width: 98%;
+  margin-left: 1%;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th{
+  font-weight: 800;
+  font-size: 28rpx;
+  color: #330e0e;
+}
+.td{
+  font-size: 28rpx;
+  color: #0f0604;
+}

@@ -1,0 +1,15 @@
+<view class='tr'>
+      <view class='td'>id</view>
+      <view class='td'>name</view>
+      <view class='td'>remark</view>
+</view>
+
+<view wx:for="{{userList}}" wx:key="id">
+  <view class='table'>
+    <view class='tr'>
+      <view class='th'>{{item.id}} </view>
+      <view class='th'>{{item.name}} </view>
+      <view class='th'>{{item.remark}} </view>
+    </view>
+  </view>
+</view>
