@@ -3,6 +3,9 @@
 var app = getApp()
 
 Page({
+  onShow() {
+    wx.reportAnalytics('enter_home_programmatically', {})
+  },
   // 开启分享页面
   onShareAppMessage() {
     return {
@@ -14,12 +17,12 @@ Page({
   data: {
     list: [
       {
-        id: 'a',
+        id: 'view',
         name: '视图容器',
         open: false,
         pages: ['view', 'scroll-view', 'swiper', 'movable-view', 'cover-view']
       }, {
-        id: 'b',
+        id: 'content',
         name: '基础内容',
         open: false,
         pages: ['text', 'icon', 'progress', 'rich-text']
@@ -28,6 +31,7 @@ Page({
   },
 
   kindToggle(e) {
+    console.log(e.currentTarget.id)
     const id = e.currentTarget.id
     const list = this.data.list
     for (let i = 0, len = list.length; i < len; ++i) {
