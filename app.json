@@ -6,12 +6,39 @@
     "pages/testForm/testForm",
     "pages/testLink/testLink",
     "pages/showData/showData",
-    "pages/showPicture/showPicture"
+    "pages/showPicture/showPicture",
+    "pages/testtabBar/testtabBar",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/border-left.png",
+        "iconPath": "image/border-left.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/border-right.png",
+        "iconPath": "image/border-right.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "selectedIconPath": "image/border-top.png",
+        "iconPath": "image/border-top.png",
+        "pagePath": "pages/test/test",
+        "text": "开心测试"
+      }
+    ]
   }
 }

@@ -34,6 +34,6 @@ App({
     })
   },
   globalData: {
-    baseUrl: "http://www.carty090616.top:8080/"
+    baseUrl: "http://localhost:8080/"
   }
 })

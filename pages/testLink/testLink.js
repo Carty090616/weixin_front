@@ -31,5 +31,13 @@ Page({
       wx.navigateTo({
       url: '../showPicture/showPicture',
       })
+  },
+
+  // 测试底部导航栏
+  goToTestTabBar: function (operation) {
+    console.log(operation),
+      wx.navigateTo({
+      url: '../testtabBar/testtabBar',
+      })
   }
 })

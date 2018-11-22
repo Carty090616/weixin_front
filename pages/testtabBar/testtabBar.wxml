@@ -1,0 +1,10 @@
+<!--pages/testtabBar/testtabBar.wxml-->
+<!--底部导航  -->
+<view class='footer'>
+  <view class='footer_list' data-id='{{index}}' catchtap='Navigation' wx:for="{{listInfo}}" data-current="{{index}}" wx:key="this" bindtap="chooseImg">
+    <image class="footer-image" hidden='{{curIdx===index}}' src="{{item.imgUrl}}"></image>
+    <image class="footer-image" hidden='{{curIdx!==index}}' src="{{item.curUrl}}"></image>
+    <view class="footer-text">{{item.text}}</view>
+  </view>
+</view>
+<!--底部导航  -->

@@ -1,0 +1,29 @@
+{
+  "navigationBarTitleText": "测试底部导航",
+  "navigationBarBackgroundColor": "#FFDEAD",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/image/border-left.png",
+        "iconPath": "pages/image/border-left.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/image/border-right.png",
+        "iconPath": "pages/image/border-right.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "selectedIconPath": "pages/image/border-top.png",
+        "iconPath": "pages/image/border-top.png",
+        "pagePath": "pages/test/test",
+        "text": "开心测试"
+      }
+    ]
+  }
+}
