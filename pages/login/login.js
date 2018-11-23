@@ -3,27 +3,20 @@
 var app = getApp()
 
 Page({
-  // 设值分享页面
-  onShareAppMessage() {
-    return {
-      title: 'carty的小程序',
-      path: 'pages/index/index'
-    }
-  },
 
   data: {
-    motto: 'Hello Worldccc01',
+    motto: '',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function () {
+  bindViewTap: function() {
     wx.navigateTo({
       url: '../testLink/testLink'
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -51,7 +44,7 @@ Page({
       })
     }
   },
-  getUserInfo: function (e) {
+  getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({

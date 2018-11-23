@@ -37,8 +37,8 @@
       {
         "selectedIconPath": "image/border-top.png",
         "iconPath": "image/border-top.png",
-        "pagePath": "pages/test/test",
-        "text": "开心测试"
+        "pagePath": "pages/login/login",
+        "text": "我的"
       }
     ]
   }

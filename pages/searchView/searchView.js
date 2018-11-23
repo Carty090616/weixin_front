@@ -28,7 +28,7 @@ Page({
     );
   },
 
-  // 3 转发函数，固定部分，直接拷贝即可
+  // 3 转发函数，固定部分，直接拷贝即可 
   wxSearchInput: WxSearch.wxSearchInput,  // 输入变化时的操作
   wxSearchKeyTap: WxSearch.wxSearchKeyTap,  // 点击提示或者关键字、历史记录时的操作
   wxSearchDeleteAll: WxSearch.wxSearchDeleteAll, // 删除所有的历史记录
