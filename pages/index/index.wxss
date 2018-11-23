@@ -1,3 +1,6 @@
+/* 引入搜索框样式 */
+@import "../../wxSearchView/wxSearchView.wxss";
+
 .index-hd {
   padding: 80rpx;
   text-align: center;
@@ -109,3 +112,56 @@
 .kind-list-item-bd-show {
   height: auto;
 }
+
+/* 开始定义搜索框样式 */
+.search{
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.search_arr input{
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+ 
+.sousuo {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09bb07;
+  white-space: nowrap;
+}
+.page_row{
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #efeff4;
+  border-top: 1rpx solid #d7d6dc;
+  border-bottom: 1rpx solid #d7d6dc;
+}
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+/* 结束定义搜索框样式 */

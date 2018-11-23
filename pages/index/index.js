@@ -3,9 +3,6 @@
 var app = getApp()
 
 Page({
-  onShow() {
-    wx.reportAnalytics('enter_home_programmatically', {})
-  },
   // 开启分享页面
   onShareAppMessage() {
     return {
@@ -27,11 +24,11 @@ Page({
         open: false,
         pages: ['text', 'icon', 'progress', 'rich-text']
       }
-    ]
+    ],
+    searchValue: ''
   },
 
   kindToggle(e) {
-    console.log(e.currentTarget.id)
     const id = e.currentTarget.id
     const list = this.data.list
     for (let i = 0, len = list.length; i < len; ++i) {
@@ -44,6 +41,21 @@ Page({
     this.setData({
       list
     })
-    wx.reportAnalytics('click_view_programmatically', {})
+  },
+
+  // 搜索页面跳回
+  onLoad: function (options) {
+    if (options && options.searchValue) {
+      this.setData({
+        searchValue: "搜索：" + options.searchValue
+      });
+    }
+  },
+
+  // 搜索入口  
+  wxSearchTab: function () {
+    wx.redirectTo({
+      url: '/pages/searchView/searchView'
+    })
   }
 })

@@ -8,7 +8,8 @@
     "pages/showData/showData",
     "pages/showPicture/showPicture",
     "pages/testtabBar/testtabBar",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/searchView/searchView"
   ],
   "window": {
     "backgroundTextStyle": "light",
